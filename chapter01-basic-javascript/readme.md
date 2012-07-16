@@ -1,4 +1,6 @@
-# Notes on Chapter 1: Basic JavaScript: Values, Variables and Control Flow
+## Notes on Chapter 1: Basic JavaScript: Values, Variables and Control Flow
+
+### Values
 
 There are six basic types of values: **numbers**, **strings**, **Booleans**, **objects**, **functions** and **undefined** values
 
@@ -13,7 +15,7 @@ Comparing strings is more or less alphabetic. <code>"Aardvark" < "Zoroaster"</co
 
 Digits can be part of variable names, as well as the __$__ and **_** characters. <code>catch22</code> or <code>$_$</code> are correct variable names.
 
-## Automatic Type Conversion
+### Automatic Type Conversion
 
 When comparing values that have different types, JavaScript tries to convert one of the values to the type of the other value: <code>"" == 0</code> -> true, <code>"5" == 5</code> -> true. The rules for converting strings and numbers to Boolean values state that 0, NaN and the empty string count as false, while all the other values count as true.
 
