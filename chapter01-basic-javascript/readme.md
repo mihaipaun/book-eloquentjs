@@ -8,7 +8,7 @@ Calculations with integers that fit in 52 bits are guaranteed to always be preci
 
 Whenever a backslash (\\) is found inside quoted text, it indicates that the character after it has a special meaning: "A newline character is writtne like \"\\n\"."
 
-The operators that operate on two values, such as **+** or **\*** are called _binary_ operators; the **typeof** operator (e.g. typeof 4.5 -> "number") is a _unary_ operator. **-** can be used both as a unary and a binary operator.
+The operators that operate on two values, such as **+** or __*__ are called _binary_ operators; the **typeof** operator (e.g. typeof 4.5 -> "number") is a _unary_ operator. **-** can be used both as a unary and a binary operator.
 
 Comparing strings is more or less alphabetic. "Aardvark" < "Zoroaster" -> true. Uppercase letters are always "less" than lowercase ones ("Z" < "a") and nonalphabetic characters (!, @, etc.) are also included in the ordering. The actual way in which the comparison is done is based on the _Unicode_ standard. This standard assigns a number to virtually every character one would ever need, including characters from Greek, Arabic, Japanese, Tamil, and so on.
 
@@ -18,4 +18,4 @@ When comparing values that have different types, JavaScript tries to convert one
 
 When you do not want automatic type conversion to happen, there are two extra operators: !== and === (it tests if a value is _precisely_ or not equal to the other)
 
-All arithmetic operations on the value NaN result in NaN (e.g. "strawberry" * 5). Also NaN == NaN -> false
+All arithmetic operations on the value NaN result in NaN (e.g. "strawberry" * 5). Also, NaN == NaN -> false
