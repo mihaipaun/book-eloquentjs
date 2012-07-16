@@ -1,5 +1,4 @@
-Notes on Chapter 1: Basic JavaScript: Values, Variables and Control Flow
-===============
+# Notes on Chapter 1: Basic JavaScript: Values, Variables and Control Flow
 
 There are six basic types of values: **numbers**, **strings**, **Booleans**, **objects**, **functions** and **undefined** values
 
@@ -13,6 +12,8 @@ The operators that operate on two values, such as **+** or __*__ are called _bin
 Comparing strings is more or less alphabetic. <code>"Aardvark" < "Zoroaster"</code> -> true. Uppercase letters are always "less" than lowercase ones ("Z" < "a") and nonalphabetic characters (!, @, etc.) are also included in the ordering. The actual way in which the comparison is done is based on the _Unicode_ standard. This standard assigns a number to virtually every character one would ever need, including characters from Greek, Arabic, Japanese, Tamil, and so on.
 
 Digits can be part of variable names, as well as the __$__ and **_** characters. <code>catch22</code> or <code>$_$</code> are correct variable names.
+
+## Automatic Type Conversion
 
 When comparing values that have different types, JavaScript tries to convert one of the values to the type of the other value: <code>"" == 0</code> -> true, <code>"5" == 5</code> -> true. The rules for converting strings and numbers to Boolean values state that 0, NaN and the empty string count as false, while all the other values count as true.
 
