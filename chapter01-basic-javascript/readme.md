@@ -18,4 +18,4 @@ When comparing values that have different types, JavaScript tries to convert one
 
 When you do not want automatic type conversion to happen, there are two extra operators: !== and === (it tests if a value is _precisely_ or not equal to the other)
 
-All arithmetic operations on the value NaN result in NaN (e.g. "strawberry" * 5). Also, NaN == NaN -> false
+All arithmetic operations on the value NaN result in NaN (e.g. "strawberry" * 5). Also, <code>NaN == NaN</code> -> false
