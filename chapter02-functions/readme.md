@@ -6,7 +6,6 @@ The computer looks up all function definitions, and stores the assocciated funct
 
 <code>
   print("The future says: ", future());
-
   function future() {
     return "We STILL have no flying cars.";
   }
@@ -38,8 +37,8 @@ The _first-class_ nature of functions is the term used for "functions are values
 ### Closure
 
 <code>
-  function createFunction() {
-    var local = 100;
+  function createFunction() {    
+    var local = 100;  
     return function() { return local; };
   }
 </code>
