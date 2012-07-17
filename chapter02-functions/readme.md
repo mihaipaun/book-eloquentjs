@@ -5,11 +5,11 @@
 The computer looks up all function definitions, and stores the assocciated functions, _before_ it starts executing the rest of the program. Thus, we do not have to think about the order in which we define and use our functions - they are all allowed to call each other, regardless of which one is defined first:
 
 <code>
-  print("The future says: ", future());    
-    
-  function future() {    
-    return "We STILL have no flying cars.";    
-  }    
+  print("The future says: ", future());
+
+  function future() {
+    return "We STILL have no flying cars.";
+  }
 </code>
 
 ### Nested scope
