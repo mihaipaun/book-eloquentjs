@@ -60,6 +60,7 @@ JavaScript is notoriously nonstrict about the amount of arguments you pass to a 
 In most JavaScript implementations, recursion is about 10 times slower than running through a simple loop. That being said, the basic rule, which has been repeated by many programmers, is **to not worry about efficiency until your program is provably too slow**. When it is, find out which parts are taking up the most time, and start exchanging elegance for efficiency in those parts.
 
 How would you write a function that, given a number, tries to find a sequence of additions and multiplications that produce that number?
+
     function findSequence(goal) {
       function find(start, history) {
         if (start == goal)
@@ -80,4 +81,5 @@ How would you write a function that, given a number, tries to find a sequence of
       return find(1, "1");
     }
     /* findSequence(24) -> (((1 * 3) + 5) * 3) */
+    
 The inner _find_ function, by calling itself in two different ways, explores both the possibility of adding 5 to the current number and of multiplying it by 3. When it finds the number, it returns the history string, which is used to record all the operators that were performed to get to this number. The use of the || operator in the example can be read as "return the solution found by adding 5 to start, and if that fails, return the solution found by multiplying start by 3".
